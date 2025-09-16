@@ -10,7 +10,19 @@
         <title>savoryfood</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+            <style>
+                body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; padding: 0; }
+                h1, h2, h3, h4 { color: #333; }
+                table { border-collapse: collapse; width: 90%; margin: 20px auto; background: #fff; box-shadow: 0 2px 8px #ccc; }
+                th, td { border: 1px solid #ccc; padding: 12px; text-align: center; }
+                th { background: #eee; }
+                caption { font-weight: bold; font-size: 1.2em; margin-bottom: 8px; }
+                ul.ingredient-list { margin: 20px auto; width: 80%; background: #fff; padding: 20px; border-radius: 8px; list-style-type: square; }
+                ol.food-steps { margin: 20px auto; width: 80%; background: #e7f7e7; padding: 20px; border-radius: 8px; list-style-type: decimal; }
+                iframe { display: block; margin: 20px auto; border: 2px solid #333; border-radius: 8px; }
+                .emoji { font-size: 2em; margin: 0 5px; }
+                .js-btn { display: block; margin: 20px auto; padding: 10px 20px; font-size: 1em; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+            </style>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -28,6 +40,72 @@
         <h4>Finally, we have the savory chocolate lava cake!</h4>
         <p>This savory chocolate lava cake is a decadent dessert made with rich dark chocolate, and a gooey molten center. Served warm with a scoop of vanilla ice cream and a drizzle of caramel sauce, this dessert is the perfect way to end your savory food adventure!</p> 
         <img src="image/Easy-Molten-Chocolate-Lava-Cakes4.jpg" alt="Savory Chocolate Lava Cake" style="max-width: 500px; width: 100%; height: auto; margin-bottom: 20px;">
+            <!-- Accessible Table Example -->
+            <h2 style="text-align:center;">Savory Food Ratings</h2>
+            <table aria-label="Savory Food Ratings">
+                <caption>Ratings of Popular Savory Foods</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Food</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Emoji</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bacon Cheeseburger</td>
+                        <td>9/10</td>
+                        <td class="emoji" aria-label="burger">🍔</td>
+                    </tr>
+                    <tr>
+                        <td>Garlic Shrimp Pasta</td>
+                        <td>8/10</td>
+                        <td class="emoji" aria-label="shrimp">🍤</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Lava Cake</td>
+                        <td>10/10</td>
+                        <td class="emoji" aria-label="chocolate">🍫</td>
+                    </tr>
+                    <tr>
+                        <td>Cheddar Cheese</td>
+                        <td>8/10</td>
+                        <td class="emoji" aria-label="cheese">🧀</td>
+                    </tr>
+                    <tr>
+                        <td>Bacon</td>
+                        <td>9/10</td>
+                        <td class="emoji" aria-label="bacon">🥓</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- List Example 1: Unordered -->
+            <h3 style="text-align:center;">Top Savory Ingredients</h3>
+            <ul class="ingredient-list">
+                <li>Cheddar Cheese 🧀</li>
+                <li>Garlic 🧄</li>
+                <li>Bacon 🥓</li>
+                <li>Shrimp 🍤</li>
+                <li>Chocolate 🍫</li>
+            </ul>
+
+            <!-- List Example 2: Ordered -->
+            <h3 style="text-align:center;">Steps to Make a Savory Burger</h3>
+            <ol class="food-steps">
+                <li>Grill the beef patty 🍔</li>
+                <li>Add cheddar cheese 🧀</li>
+                <li>Top with crispy bacon 🥓</li>
+                <li>Place on a toasted bun 🥯</li>
+                <li>Add your favorite toppings 🥬🍅🧅</li>
+            </ol>
+
+        <!-- Iframe Example -->
+        <h3 style="text-align:center;">Watch a Savory Food Recipe</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T5SYu8tyKjM?si=LcLVIGuKe03BIrz6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <!-- Simple JavaScript Example -->
+            <button class="js-btn" onclick="alert('Savory food makes life better! 😋')">Click for Savory Surprise!</button>
         <script src="" async defer></script>                
     </body>
 </html>
